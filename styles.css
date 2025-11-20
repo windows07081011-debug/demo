@@ -54,3 +54,4 @@
   /* thank you */
   .thanks{display:flex;min-height:60vh;align-items:center;justify-content:center}
   .thanks-card{background:var(--card);padding:28px;border-radius:12px;text-align:center;box-shadow:0 12px 36px rgba(11,111,182,0.06)}
+  
