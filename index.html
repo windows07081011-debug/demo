@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aspire MDCAT Testing Service — Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Aspire MDCAT Testing Service</h1>
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#register" class="btn btn-primary">Register Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2>Prepare for MDCAT with confidence</h2>
+          <p>Timed mock tests, expert-curated questions, progress tracking, and live discussion sessions — all designed for MDCAT success.</p>
+          <a href="#register" class="btn btn-large btn-primary">Register Now</a>
+        </div>
+        <div class="hero-card">
+          <h3>Important information</h3>
+          <ul>
+            <li>Full-length timed tests</li>
+            <li>Detailed solutions & performance analysis</li>
+            <li>Limited seats per test — book early</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h3>Key Features</h3>
+      <div class="features-grid">
+        <div class="feature">
+          <h4>Real exam pattern</h4>
+          <p>Questions follow the official MDCAT format and time limits.</p>
+        </div>
+        <div class="feature">
+          <h4>Expert feedback</h4>
+          <p>Get guidance from experienced tutors after each test.</p>
+        </div>
+        <div class="feature">
+          <h4>Performance report</h4>
+          <p>See strengths & weaknesses to focus your revision.</p>
+        </div>
+        <div class="feature">
+          <h4>Affordable  Packages</h4>
+          <p>Multiple packages and instalment options available.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="container how">
+      <h3>How it works</h3>
+      <ol>
+        <li>Register using the form below</li>
+        <li>Receive schedule & instructions via email/phone</li>
+        <li>Attend online mock test — get report after test</li>
+      </ol>
+    </section>
+
+    <section id="register" class="container register">
+      <h3>Student Registration</h3>
+      <form id="registerForm" class="form-card" autocomplete="off">
+        <div class="grid-2">
+          <label>
+            Full name *
+            <input name="name" id="name" type="text" required>
+          </label>
+          <label>
+            Email *
+            <input name="email" id="email" type="email" required>
+          </label>
+        </div>
+
+        <div class="grid-2">
+          <label>
+            Phone *
+            <input name="phone" id="phone" type="tel" required>
+          </label>
+          <label>
+            City
+            <input name="city" id="city" type="text">
+          </label>
+        </div>
+
+        <div class="grid-2">
+          <label>
+            Date of birth
+            <input name="dob" id="dob" type="date">
+          </label>
+          <label>
+            Institute
+            <input name="institute" id="institute" type="text">
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button id="submitBtn" type="submit" class="btn btn-primary">Submit Registration</button>
+          <div id="formMsg" class="form-msg" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Aspire MDCAT Testing Service — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
+</body>
+</html>
